@@ -10,6 +10,7 @@ import 'package:adobe_xd/pinned.dart';
 import 'package:adobe_xd/page_link.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:leave_management/config/images.dart';
+import 'package:leave_management/views/pages/home.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -20,10 +21,16 @@ class _LoginState extends State<Login> {
   late String email, password;
   final _formKey = GlobalKey<FormState>();
   void initState() {
-    print("sssssssssssssssssssssssss");
     super.initState();
   }
-
+  memberLogin(email, password) async {
+    print(email);
+    print(password);
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => HomePage()),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -88,13 +95,13 @@ class _LoginState extends State<Login> {
                         //
                         //   }
                         // },
-                        // onTap: () async {
-                        //   memberLogin(email, password);
+                        onTap: () async {
+                          memberLogin(email, password);
                         //   // Navigator.push(
                         //   //   context,
                         //   //   MaterialPageRoute(builder: (context) => OverView()),
                         //   // );
-                        // },
+                        },
                         child: button(),
                       ),
                     ],

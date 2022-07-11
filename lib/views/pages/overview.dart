@@ -28,9 +28,6 @@ class _OverViewState extends State<OverView> {
     //   var result = await get('notification', body: queryParameters);
       // var result = await getSP('access_token');
       // if (result == null) {
-        print("@@@@@@@@@@@@@@@@@");
-        print("@@@@@@@@@@@@@@@@@@@@");
-        print("@@@@@@@@@@@@@@@@@@@@@@@@");
         WidgetsBinding.instance.addPostFrameCallback((_) {
           Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => Login()));
         });
