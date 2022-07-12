@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 Widget button() {
   return Container(
     height: 52.0,
+    width: 150.0,
     decoration: BoxDecoration(
       color: const Color(0xffffffff),
       borderRadius: BorderRadius.circular(55.0),

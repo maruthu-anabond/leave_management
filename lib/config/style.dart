@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 const appStyle = {
   // FontFamily
-  'fontFamily': 'segoeui',
+  'fontFamily': 'Roboto',
   //Colors list
   'primaryWhiteColor': Color(0xffFFFFFF),
   'primaryTextColor': Color(0xff2E3374),
@@ -66,8 +66,8 @@ var loginmainLabel = TextStyle(
   fontWeight: FontWeight.w400,
 );
 var loginButton = TextStyle(
-  fontFamily: 'Roboto',
-  fontSize: 20,
+  // fontFamily: 'Roboto',
+  fontSize: 15.0,
   color: const Color(0xff288b77),
   fontWeight: FontWeight.w700,
 );

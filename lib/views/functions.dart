@@ -41,7 +41,7 @@ void showToast(String msg, BuildContext context,
 
 void showSnackBar(BuildContext context, String message) async {
   final snackBar = SnackBar(content: Text(message));
-  Scaffold.of(context).showSnackBar((snackBar));
+  ScaffoldMessenger.of(context).showSnackBar((snackBar));
 }
 
 // Future<bool> saveBackgroundImage() async {
@@ -62,7 +62,7 @@ Widget loader() => Container(
       Container(
         alignment: Alignment.center,
         child: SpinKitDoubleBounce(
-          color: Colors.blue,
+          color: Color(0xff288b77),
           size: 50.0,
         ),
 

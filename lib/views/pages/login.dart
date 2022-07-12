@@ -63,13 +63,16 @@ class _LoginState extends State<Login> {
                     children: <Widget>[
                       InputFiled(
                         labelName: ucwords(
-                          'User',
+                          'Username',
                         ),
                         inputType: TextInputType.emailAddress,
                         value: (String value) {
                           email = value;
                           // setState(() {});
                         },
+                      ),
+                      SizedBox(
+                        height: 20.0,
                       ),
                       InputFiled(
                         labelName: ucwords(
@@ -80,6 +83,24 @@ class _LoginState extends State<Login> {
                           password = value;
                           // setState(() {});
                         },
+                      ),
+                      SizedBox(height: 10),
+                      Align(
+                        alignment: Alignment(0.9, 1),
+                        child: MouseRegion(
+                          cursor: SystemMouseCursors.click,
+                          child: Text(
+                              "Forget Password",
+                              style: TextStyle(
+                                  // decoration: TextDecoration.underline,
+                                  color: Colors.blue
+                              )
+                          ),
+                          // onTap: () async {
+                          //   const url = 'https://www.google.com';
+                          //   if (await canLaunch(url)) launch(url);
+                          // },
+                        ),
                       ),
                       SizedBox(
                         height: 40.0,
