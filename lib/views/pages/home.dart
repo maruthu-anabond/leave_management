@@ -12,6 +12,9 @@ import 'package:adobe_xd/page_link.dart';
 // import './LeaveHistory4.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:leave_management/myWidget/appbackground.dart';
+import 'package:leave_management/views/pages/login.dart';
+
+import '../../config/style.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -19,7 +22,12 @@ class Home extends StatefulWidget {
 
 }
   class _HomePageState extends State<Home> {
-
+    logout() async {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => Login()),
+      );
+    }
   @override
   Widget build(BuildContext context) {
     return AppBackground(child: ListView(
@@ -38,11 +46,39 @@ class Home extends StatefulWidget {
                 // key: _formKey,
                 child: Column(
                   children: <Widget>[
-                      Text("Welcome",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold
+                    Text("Welcome!",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 50,
+                      ),
+                    ),
+                    InkWell(
+                      onTap: () async {
+                        logout();
+                        //   // Navigator.push(
+                        //   //   context,
+                        //   //   MaterialPageRoute(builder: (context) => OverView()),
+                        //   // );
+                      },
+                      child: Container(
+                        width: 100,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: const Color(0xffffffff),
+                          borderRadius: BorderRadius.circular(55.0),
+                          border: Border.all(
+                              width: 3.0, color: const Color(0xff288b77)),
+                          // gradient: LinearGradient(
+                          //     colors: [Color(0xff2E3374), Color(0xff5E86E5)],
+                          //     begin: Alignment.centerRight,
+                          //     end: Alignment.centerLeft),
+                        ),
+                        child: Text(
+                          'Logout',
+                          style: loginButton,
                         ),
                       ),
+                    ),
                     ],
                 ),
               ),
