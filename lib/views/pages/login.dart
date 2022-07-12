@@ -41,7 +41,7 @@ class _LoginState extends State<Login> {
           shrinkWrap: true,
           children: <Widget>[
             SizedBox(
-              height: 40.0,
+              height: 30.0,
             ),
             Image(
               image: AssetImage(UIImageData.logo),
@@ -50,7 +50,7 @@ class _LoginState extends State<Login> {
 
             ),
             SizedBox(
-              height: 40.0,
+              height: 30.0,
             ),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 15.0),
@@ -103,7 +103,7 @@ class _LoginState extends State<Login> {
                         ),
                       ),
                       SizedBox(
-                        height: 40.0,
+                        height: 20.0,
                       ),
                       InkWell(
                         // onTap: () async {
