@@ -39,6 +39,7 @@ dependencies:
   shared_preferences: ^2.0.15
   flutter_spinkit: ^5.1.0
   adobe_xd: ^2.0.1
+  flutter_cache_manager: ^3.3.0
 
 dev_dependencies:
   flutter_test:

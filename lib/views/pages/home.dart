@@ -12,7 +12,9 @@ import 'package:adobe_xd/page_link.dart';
 // import './LeaveHistory4.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:leave_management/myWidget/appbackground.dart';
+import 'package:leave_management/myWidget/badges.dart';
 import 'package:leave_management/views/pages/login.dart';
+import 'package:leave_management/views/templates/headernav.dart';
 
 import '../../config/style.dart';
 
@@ -30,63 +32,97 @@ class Home extends StatefulWidget {
     }
   @override
   Widget build(BuildContext context) {
-    return AppBackground(child: ListView(
-        physics: ClampingScrollPhysics(),
-        shrinkWrap: true,
+    return AppBackground(child: Container(
+        child: Stack(
         children: <Widget>[
-          SizedBox(
-            height: 40.0,
+        Container(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            SizedBox(height: 80.0,
+        ),
+        Container(
+          child: headerBar(
+            context,
+            profilePic: 'assets/images/menu.png',
+            name: "1",
+            notificationIcon: UIImageData.notification,
+            notificationCount: (5).toString(),
+            extraIcon: true,
           ),
-          Container(
-            margin: EdgeInsets.symmetric(horizontal: 15.0),
-            width: MediaQuery.of(context).size.width,
-            height: 650.0,
-            child: cardWidgetlogin(
-              Form(
-                // key: _formKey,
+
+        ),
+        SizedBox(height: 5.0,),
+        Expanded(
+        flex: 1,
+        child: DefaultTabController(
+          length: 2,
+          child: Column(
+          children: <Widget>[
+            Container(
+              padding: EdgeInsets.all(16.0),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10.0),
+                color: appStyle['primaryWhiteColor'] as Color,
+              ),
+              margin: EdgeInsets.symmetric(horizontal: 20.0),
+              child: SingleChildScrollView(
+                physics: ScrollPhysics(),
                 child: Column(
                   children: <Widget>[
-                    Text("Welcome!",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 50,
-                      ),
-                    ),
-                    InkWell(
-                      onTap: () async {
-                        logout();
-                        //   // Navigator.push(
-                        //   //   context,
-                        //   //   MaterialPageRoute(builder: (context) => OverView()),
-                        //   // );
-                      },
-                      child: Container(
-                        width: 100,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(
-                          color: const Color(0xffffffff),
-                          borderRadius: BorderRadius.circular(55.0),
-                          border: Border.all(
-                              width: 3.0, color: const Color(0xff288b77)),
-                          // gradient: LinearGradient(
-                          //     colors: [Color(0xff2E3374), Color(0xff5E86E5)],
-                          //     begin: Alignment.centerRight,
-                          //     end: Alignment.centerLeft),
+                Container(
+                child: cardWidgetlogin(
+                    Form(
+                    child: Column(
+                      children: <Widget>[
+                        Text("Welcome!",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 50,
+                          ),
                         ),
-                        child: Text(
-                          'Logout',
-                          style: loginButton,
+                        InkWell(
+                          onTap: () async {
+                            logout();
+                            //   // Navigator.push(
+                            //   //   context,
+                            //   //   MaterialPageRoute(builder: (context) => OverView()),
+                            //   // );
+                          },
+                          child: Container(
+                            width: 100,
+                            alignment: Alignment.center,
+                            decoration: BoxDecoration(
+                              color: const Color(0xffffffff),
+                              borderRadius: BorderRadius.circular(105.0),
+                              border: Border.all(
+                                  width: 3.0, color: const Color(0xff288b77)),
+                              // gradient: LinearGradient(
+                              //     colors: [Color(0xff2E3374), Color(0xff5E86E5)],
+                              //     begin: Alignment.centerRight,
+                              //     end: Alignment.centerLeft),
+                            ),
+                            child: Text(
+                              'Logout',
+                              style: loginButton,
+                            ),
+                          ),
                         ),
-                      ),
+                      ],
                     ),
-                    ],
+                ),
                 ),
               ),
+        ],),),
             ),
-          ),
+              ],
+          ),),),
           ],
+        ),
     ),
-    );
+    ],
+    ),
+    ),);
   }
   }
 const String _svg_thjpg3 =

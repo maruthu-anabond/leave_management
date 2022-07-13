@@ -55,6 +55,21 @@ const appStyle = {
 //         fontWeight: FontWeight.w400),
 //   ),
 // );
+var userheading = TextStyle(
+  fontSize: 18.0,
+  color: Color(0xffFFFFFF),
+  fontWeight: FontWeight.w400,
+);
+var headerSubhead = TextStyle(
+  fontSize: 10.0,
+  color: Color(0xccffffff),
+  fontWeight: FontWeight.w400,
+);
+var centerheading = TextStyle(
+  fontSize: appStyle['secondarymediumsize'] as double,
+  color: appStyle['primaryWhiteColor'] as Color,
+  fontWeight: FontWeight.w600,
+);
 var inputValueStyle = TextStyle(
   fontSize: 16.0,
   color: Color(0xff707070),
