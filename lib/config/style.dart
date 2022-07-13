@@ -65,6 +65,11 @@ var headerSubhead = TextStyle(
   color: Color(0xccffffff),
   fontWeight: FontWeight.w400,
 );
+var headerMain = TextStyle(
+  fontSize: 20.0,
+  color: Color(0xffFFFFFF),
+  fontWeight: FontWeight.w700,
+);
 var centerheading = TextStyle(
   fontSize: appStyle['secondarymediumsize'] as double,
   color: appStyle['primaryWhiteColor'] as Color,

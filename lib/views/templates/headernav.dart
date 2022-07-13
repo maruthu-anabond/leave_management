@@ -58,8 +58,8 @@ Widget headerBar(
                 //   );
                 // },
                 child: Container(
-                  width: 30.0,
-                  height: 30.0,
+                  width: 22.0,
+                  height: 22.0,
                   decoration: new BoxDecoration(
                     image: new DecorationImage(
                       fit: BoxFit.fill,
@@ -309,6 +309,140 @@ Widget headerStyleTwo(
               //         ],
               //       )
               //     : SizedBox(),
+            ],
+          ),
+        ),
+      ],
+    ),
+  );
+}
+Widget headerStyleLeave(
+    String title,
+    BuildContext context, {
+      required String headerLeave,
+    }) {
+  return Container(
+    padding: EdgeInsets.symmetric(horizontal: 20.0),
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: <Widget>[
+        Container(
+          padding: EdgeInsets.only(bottom: 10.0),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              // scope?GestureDetector(
+              //   onTap: () {
+              //     Navigator.pop(context);
+              //   },
+              //   // child: Image(
+              //   //   image: AssetImage(UIImageData.back_arrow),
+              //   //   width: 26.0,
+              //   //   height: 26.0,
+              //   // ),
+              // ):SizedBox(),
+              GestureDetector(
+                // onTap: () {
+                //   Navigator.push(
+                //     context,
+                //     MaterialPageRoute(
+                //       builder: (context) => ProfileWidget(),
+                //     ),
+                //   );
+                // },
+                child: Container(
+                  width: 13.0,
+                  height: 18.0,
+                  decoration: new BoxDecoration(
+                    image: new DecorationImage(
+                      fit: BoxFit.fill,
+                      image: AssetImage(UIImageData.back),
+                    ),
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: EdgeInsets.only(
+                    left: 10.0,
+                  ),
+                  child: Column(
+                    children: <Widget>[
+                      // Align(
+                      //   alignment: Alignment.topLeft,
+                      //   child: Text(
+                      //     ucwords("e") + '$name',
+                      //     textAlign: TextAlign.left,
+                      //     style: userheading,
+                      //   ),
+                      // ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Align(
+                        alignment: Alignment.center,
+                        child: Text(
+                          headerLeave,
+                          // textAlign: TextAlign.center,
+                          style: headerMain,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              // extraIcon
+              //     ? GestureDetector(
+              //   onTap: () {
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(
+              //         builder: (context) =>
+              //         scope ? OverView() : ScopeLayout(),
+              //       ),
+              //     );
+              //   },
+              //   child: Image(
+              //     image: AssetImage(scopepageIcon),
+              //     width: 28.0,
+              //     height: 28.0,
+              //   ),
+              // )
+              //     : Text(""),
+              // SizedBox(width: 23.0),
+              // GestureDetector(
+              //   onTap: () {
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(
+              //         builder: (context) => OverView(),
+              //       ),
+              //     );
+              //   },
+              //   child: Image(
+              //     image: AssetImage(overviewpageIcon),
+              //     width: 18.0,
+              //     height: 20.0,
+              //   ),
+              // ),
+
+              GestureDetector(
+                // onTap: () {
+                //   Navigator.push(
+                //     context,
+                //     MaterialPageRoute(
+                //       builder: (context) => NotificationPage(''),
+                //     ),
+                //   );
+                // },
+                  child:
+                  Image(
+                    image: AssetImage(UIImageData.home),
+                    width: 25.0,
+                    height: 25.0,
+                  ),
+                ),
             ],
           ),
         ),
