@@ -4,7 +4,7 @@ Widget cardWidget(Widget child) {
   return Card(
     elevation: 0.0,
     shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(10.0),
+      borderRadius: BorderRadius.circular(20.0),
     ),
     child: Column(
       // mainAxisAlignment: MainAxisAlignment.spaceBetween,

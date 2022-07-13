@@ -8,4 +8,5 @@ class UIImageData {
   static const String notification = '$imageDir/notification.png';
   static const String back = '$imageDir/back.png';
   static const String home = '$imageDir/home.png';
+  static const String profile = '$imageDir/profile.png';
 }
