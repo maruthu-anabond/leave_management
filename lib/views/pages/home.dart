@@ -64,19 +64,57 @@ class _HomePageState extends State<Home> {
                     children: <Widget>[
                       Container(
                         padding: EdgeInsets.symmetric(horizontal: 20.0),
-                        margin: EdgeInsets.only(bottom: 20.0, top: 40.0),
+                        margin: EdgeInsets.only(bottom: 20.0, top: 33.0),
                         child: cardWidget(
                           Container(
                             margin: EdgeInsets.only(top: 30.0, bottom: 10.0),
                             child: Column(
                               children: <Widget>[
                                 Text(
-                                  "Maruthu U",
+                                  "John Smith",
                                   style: TextStyle(
+                                    fontFamily: 'Roboto',
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 10,
+                                    fontSize:20,
+                                    color:appStyle['mattGreen'] as Color,
                                   ),
                                 ),
+                                Text(
+                                  "Senior Developer",
+                                  style: TextStyle(
+                                    fontFamily: 'Roboto',
+                                    color: appStyle['mattGreen'] as Color,
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w300,
+                                    fontSize: 18,
+                                  ),
+                                ),
+                                SizedBox(height: 15),
+                                Row(
+                                  children: <Widget>[
+                                    Text(
+                                      "Total Limit - 45 days",
+                                      style: TextStyle(
+                                        fontFamily: 'Roboto',
+                                        fontWeight: FontWeight.w700,
+                                        color: appStyle['mattBlack'] as Color,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                    SizedBox(width: 20), // give it width
+                                    Text(
+                                      "Leave Available - 40 days",
+                                      style: TextStyle(
+                                        fontFamily: 'Roboto',
+                                        fontWeight: FontWeight.w700,
+                                        color: appStyle['mattGreen'] as Color,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ],
+
+                                ),
+                                SizedBox(height: 65),
                                 InkWell(
                                   onTap: () async {
                                     logout();
@@ -131,8 +169,8 @@ class _HomePageState extends State<Home> {
                         right: 0.0,
                         child: Center(
                           child: Container(
-                            width: 110.0,
-                            height: 110.0,
+                            width: 90.0,
+                            height: 90.0,
                             alignment: Alignment.center,
                             child: Card(
                               elevation: 0.0,
@@ -153,8 +191,8 @@ class _HomePageState extends State<Home> {
                                           child: Image(
                                             image: AssetImage('assets/images/profile.png'),
                                             fit: BoxFit.cover,
-                                            width: 90.0,
-                                            height: 90.0,
+                                            width: 70.0,
+                                            height: 70.0,
                                           ),
                                         ),
                                       ],

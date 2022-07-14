@@ -39,6 +39,8 @@ const appStyle = {
 
   //Border Color
   'borderColor': Color(0xffe2e2e2),
+  'mattGreen': Color(0xff288b77),
+  'mattBlack': Color(0xff3a3a3a),
 };
 
 // ThemeData appThemeData = ThemeData(
