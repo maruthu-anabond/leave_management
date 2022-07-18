@@ -106,36 +106,67 @@ class _HomePageState extends State<Home> {
                                   ],
 
                                 ),
-                                SizedBox(height: 35),
+                                SizedBox(height: 15),
                                 CarouselSlider(
-                                  options: CarouselOptions(height: 150.0),
+                                  options: CarouselOptions(height: 170.0),
                                   items: [1, 2, 3, 4, 5].map((i) {
                                     return Builder(
                                       builder: (BuildContext context) {
                                         return Container(
                                           width: MediaQuery.of(context).size.width,
-                                          margin: EdgeInsets.symmetric(horizontal: 5.0),
+                                          margin: EdgeInsets.symmetric(horizontal: 2.0),
                                           decoration: BoxDecoration(
                                               borderRadius: BorderRadius.circular(25.0),
                                               boxShadow: [
                                                 BoxShadow(
                                                   color: const Color(0x29000000),
-                                                  offset: Offset(0, 3),
+                                                  offset: Offset(0, 6),
                                                   blurRadius: 6,
                                                 ),
                                               ],
                                               color: appStyle['primaryWhiteColor'] as Color
 
                                           ),
-                                          child:Image(
-                                            image: AssetImage(
-                                                i == 1? UIImageData.duty: i==2 ?UIImageData.permission: i==2?UIImageData.sickLeave:
-                                            i==3?UIImageData.casualLeave:i==4? UIImageData.earnedLeave:UIImageData.maternity),
-                                            width: 28.0,
-                                            height: 28.0,
+                                          child: Column(
+                                            children: [
+                                            Container(
+                                              margin: EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 5.0),
+                                              child:Image(
+                                              image: AssetImage(
+                                                  i == 1? UIImageData.duty: i==2 ?UIImageData.permission: i==2?UIImageData.sickLeave:
+                                              i==3?UIImageData.casualLeave:i==4? UIImageData.earnedLeave:UIImageData.maternity),
+                                              width: 105.0,
+                                              height:85.0,
+                                            ),
+                                            ),
+
+                                            Text(
+                                          i == 1? "On Duty": i==2 ?"Permission": i==2?"Sick Leave":
+                                        i==3?"Casual Leave":i==4? "Earned Leave":"Maternity Leave",
+                                            style: TextStyle(
+                                            fontFamily: 'Roboto',
+                                            fontWeight: FontWeight.w400,
+                                            color: Colors.black,
+                                            fontSize: 14,
+                                            ),
+                                            ),
+                                              SizedBox(height: 10),
+                                            Text(
+                                              i == 1? "Days taken 03": i==2 ?"Available - 01hr": i==2?"Available - 14 days":
+                                              i==3?"Available - 14 days":i==4? "Available - 14 days":"Available - 182 days",
+                                              style: TextStyle(
+                                                color: appStyle['mattGreen'] as Color,
+                                                fontStyle: FontStyle.italic,
+                                                fontWeight: FontWeight.w300,
+                                                fontSize: 12,
+                                              ),
+                                            ),
+
+
+
+
+                                          ],
                                           ),
-
-
                                         );
                                       },
                                     );
