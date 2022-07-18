@@ -14,4 +14,7 @@ class UIImageData {
   static const String history = '$imageDir/history.png';
   static const String calendar = '$imageDir/calendar.png';
   static const String report = '$imageDir/report.png';
+  static const String menu = '$imageDir/menu.png';
+  static const String leave_calendar = '$imageDir/leave_calendar.png';
+  static const String bgcom = '$imageDir/intersection.png';
 }

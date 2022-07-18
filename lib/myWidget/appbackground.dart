@@ -8,8 +8,9 @@ import 'package:leave_management/config/images.dart';
 
 class AppBackground extends StatefulWidget {
   final Widget child;
-  final bool? bgflag;
-  AppBackground({Key? key, this.bgflag, required this.child}) : super(key: key);
+  // final bool? bgflag;
+  // AppBackground({Key? key, this.bgflag, required this.child}) : super(key: key);
+  AppBackground({Key? key, required this.child}) : super(key: key);
   @override
   _AppBackgroundState createState() => _AppBackgroundState();
 }
@@ -25,13 +26,14 @@ class _AppBackgroundState extends State<AppBackground> {
   }
 
   String setBg(){
-    String flag = "${widget.bgflag}";
-    if(flag == "true"){
-      bg = "assets/images/appbgcommon.png";
-    }
-    else{
-      bg = "assets/images/appbg.png";
-    }
+    // String flag = "${widget.bgflag}";
+    // if(flag == "true"){
+    //   bg = UIImageData.bgcom;
+    // }
+    // else{
+    //   bg = UIImageData.bg;
+    // }
+    bg = UIImageData.bg;
     return bg;
   }
 

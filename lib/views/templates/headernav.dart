@@ -360,14 +360,14 @@ Widget headerStyleLeave(
               //   // ),
               // ):SizedBox(),
               GestureDetector(
-                // onTap: () {
-                //   Navigator.push(
-                //     context,
-                //     MaterialPageRoute(
-                //       builder: (context) => ProfileWidget(),
-                //     ),
-                //   );
-                // },
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Home(),
+                    ),
+                  );
+                },
                 child: Container(
                   width: 13.0,
                   height: 18.0,
@@ -445,14 +445,14 @@ Widget headerStyleLeave(
               // ),
 
               GestureDetector(
-                // onTap: () {
-                //   Navigator.push(
-                //     context,
-                //     MaterialPageRoute(
-                //       builder: (context) => NotificationPage(''),
-                //     ),
-                //   );
-                // },
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Home(),
+                    ),
+                  );
+                },
                   child:
                   Image(
                     image: AssetImage(UIImageData.home),
