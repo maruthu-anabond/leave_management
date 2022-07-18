@@ -37,7 +37,7 @@ class _LeaveAppBackgroundState extends State<LeaveAppBackground> {
       child: new Scaffold(resizeToAvoidBottomInset: false,
         body: Container(
           width: MediaQuery.of(context).size.width,
-          height: 200,
+          height: MediaQuery.of(context).size.height,
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage(setBg()),
