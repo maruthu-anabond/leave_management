@@ -62,6 +62,21 @@ var userheading = TextStyle(
   color: Color(0xffFFFFFF),
   fontWeight: FontWeight.w400,
 );
+var tabUnSelectStyle = TextStyle(
+  fontSize: appStyle['lowlevellarge'] as double,
+  color: appStyle['primaryWhiteColor'] as Color,
+  fontWeight: FontWeight.w600,
+);
+var tabSelectStyle = TextStyle(
+  fontSize: appStyle['lowlevellarge'] as double,
+  color: appStyle['primaryWhiteColor'] as Color,
+  fontWeight: FontWeight.w600,
+);
+var profileTitle = TextStyle(
+  fontSize: appStyle['secondarymediumsize'] as double,
+  color: appStyle['lightGray'] as Color,
+  fontWeight: FontWeight.w400,
+);
 var headerSubhead = TextStyle(
   fontSize: 10.0,
   color: Color(0xccffffff),

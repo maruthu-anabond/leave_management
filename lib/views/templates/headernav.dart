@@ -2,6 +2,7 @@ import 'package:leave_management/config/app_lang.dart';
 import 'package:leave_management/config/images.dart';
 import 'package:leave_management/config/style.dart';
 import 'package:leave_management/views/pages/login.dart';
+import 'package:leave_management/views/pages/home.dart';
 import 'package:flutter/material.dart';
 import 'package:leave_management/myWidget/badges.dart';
 import 'package:leave_management/views/functions.dart';
@@ -57,15 +58,31 @@ Widget headerBar(
                 //     ),
                 //   );
                 // },
-                child: Container(
-                  width: 22.0,
-                  height: 22.0,
-                  decoration: new BoxDecoration(
-                    image: new DecorationImage(
-                      fit: BoxFit.fill,
-                      image: AssetImage(profilePic),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Login(),
                     ),
-                  ),
+                  );
+                },
+                child: Container(
+                  child:Text('Logout',
+                    style: TextStyle(
+                      fontFamily: 'Roboto',
+                      color: appStyle['primaryWhiteColor'] as Color,
+                      fontSize: 14,
+                    ),),
+                  // width: 22.0,
+                  // height: 22.0,
+                  // decoration: new BoxDecoration(
+                  //   image: new DecorationImage(
+                  //     fit: BoxFit.fill,
+                  //     image: AssetImage(profilePic),
+                  //   ),
+
+                  // ),
+
                 ),
               ),
               Expanded(

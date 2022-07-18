@@ -2,21 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:leave_management/myWidget/appbackground.dart';
 import 'package:leave_management/myWidget/cardwidget.dart';
 import 'package:leave_management/config/images.dart';
-import 'package:leave_management/myWidget/loginbutton.dart';
 import 'package:adobe_xd/pinned.dart';
-
-// import './Notification.dart';
 import 'package:adobe_xd/page_link.dart';
-
-// import './Profile.dart';
-// import './PendingApprovals2.dart';
-// import './Calender.dart';
-// import './LeaveHistory4.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:leave_management/myWidget/appbackground.dart';
 import 'package:leave_management/myWidget/badges.dart';
 import 'package:leave_management/views/pages/login.dart';
-import 'package:leave_management/views/pages/HomeScreen13.dart';
 import 'package:leave_management/views/templates/headernav.dart';
 
 import '../../config/style.dart';
@@ -91,6 +82,7 @@ class _HomePageState extends State<Home> {
                                 ),
                                 SizedBox(height: 15),
                                 Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: <Widget>[
                                     Text(
                                       "Total Limit - 45 days",
@@ -114,50 +106,111 @@ class _HomePageState extends State<Home> {
                                   ],
 
                                 ),
-                                SizedBox(height: 65),
-                                InkWell(
-                                  onTap: () async {
-                                    logout();
-                                    //   // Navigator.push(
-                                    //   //   context,
-                                    //   //   MaterialPageRoute(builder: (context) => OverView()),
-                                    //   // );
-                                  },
-                                  child: Container(
-                                    width: 100,
-                                    alignment: Alignment.center,
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xffffffff),
-                                      borderRadius:
-                                          BorderRadius.circular(105.0),
-                                      border: Border.all(
-                                          width: 3.0,
-                                          color: const Color(0xff288b77)),
-                                      // gradient: LinearGradient(
-                                      //     colors: [Color(0xff2E3374), Color(0xff5E86E5)],
-                                      //     begin: Alignment.centerRight,
-                                      //     end: Alignment.centerLeft),
-                                    ),
-                                    child: Text(
-                                      'Logout',
-                                      style: loginButton,
-                                    ),
+                                SizedBox(height: 165),
+                                cardWidgetlogin(
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: <Widget>[
+                                      Image(
+                                        image: AssetImage(UIImageData.report),
+                                        width: 28.0,
+                                        height: 28.0,
+                                      ),
+                                      Text('Pending request',
+                                        style: TextStyle(
+                                          fontFamily: 'Roboto',
+                                          fontWeight: FontWeight.w700,
+                                          color: appStyle['mattBlack'] as Color,
+                                          fontSize: 14,
+                                        ),), // give it width
+                                      Image(
+                                        image: AssetImage(UIImageData.navig),
+                                        width: 28.0,
+                                        height: 28.0,
+                                      ),
+                                    ],
+
                                   ),
                                 ),
-                                InkWell(
-                                  onTap: () async {
-                                    logout();
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => HomeScreen13()),
-                                    );
-                                  },
-                                  child: Text(
-                                    'HOME',
-                                    style: loginButton,
+                                cardWidgetlogin(
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: <Widget>[
+                                      Image(
+                                        image: AssetImage(UIImageData.history),
+                                        width: 28.0,
+                                        height: 28.0,
+                                      ),
+                                      Text('Leave history',
+                                        style: TextStyle(
+                                          fontFamily: 'Roboto',
+                                          fontWeight: FontWeight.w700,
+                                          color: appStyle['mattBlack'] as Color,
+                                          fontSize: 14,
+                                        ),), // give it width
+                                      Image(
+                                        image: AssetImage(UIImageData.navig),
+                                        width: 28.0,
+                                        height: 28.0,
+                                      ),
+                                    ],
+
                                   ),
                                 ),
+                                cardWidgetlogin(
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: <Widget>[
+                                      Image(
+                                        image: AssetImage(UIImageData.calendar),
+                                        width: 28.0,
+                                        height: 28.0,
+                                      ),
+                                      Text('Leave calendar',
+                                        style: TextStyle(
+                                          fontFamily: 'Roboto',
+                                          fontWeight: FontWeight.w700,
+                                          color: appStyle['mattBlack'] as Color,
+                                          fontSize: 14,
+                                        ),), // give it width
+                                      Image(
+                                        image: AssetImage(UIImageData.navig),
+                                        width: 28.0,
+                                        height: 28.0,
+                                      ),
+                                    ],
+
+                                  ),
+                                ),
+                                // InkWell(
+                                //   onTap: () async {
+                                //     logout();
+                                //     //   // Navigator.push(
+                                //     //   //   context,
+                                //     //   //   MaterialPageRoute(builder: (context) => OverView()),
+                                //     //   // );
+                                //   },
+                                //   child: Container(
+                                //     width: 100,
+                                //     alignment: Alignment.center,
+                                //     decoration: BoxDecoration(
+                                //       color: const Color(0xffffffff),
+                                //       borderRadius:
+                                //           BorderRadius.circular(105.0),
+                                //       border: Border.all(
+                                //           width: 3.0,
+                                //           color: const Color(0xff288b77)),
+                                //       // gradient: LinearGradient(
+                                //       //     colors: [Color(0xff2E3374), Color(0xff5E86E5)],
+                                //       //     begin: Alignment.centerRight,
+                                //       //     end: Alignment.centerLeft),
+                                //     ),
+                                //     child: Text(
+                                //       'Logout',
+                                //       style: loginButton,
+                                //     ),
+                                //   ),
+                                // ),
                               ],
                             ),
                           ),
