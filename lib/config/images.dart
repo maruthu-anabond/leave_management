@@ -17,4 +17,10 @@ class UIImageData {
   static const String menu = '$imageDir/menu.png';
   static const String leave_calendar = '$imageDir/leave_calendar.png';
   static const String bgcom = '$imageDir/intersection.png';
+  static const String casualLeave = '$imageDir/CL.png';
+  static const String earnedLeave = '$imageDir/EL.png';
+  static const String maternity = '$imageDir/maternity.png';
+  static const String duty = '$imageDir/on_duty.png';
+  static const String permission = '$imageDir/permission.png';
+  static const String sickLeave = '$imageDir/sick_leave.png';
 }

@@ -9,7 +9,7 @@ import 'package:leave_management/myWidget/appbackground.dart';
 import 'package:leave_management/myWidget/badges.dart';
 import 'package:leave_management/views/pages/login.dart';
 import 'package:leave_management/views/templates/headernav.dart';
-
+import 'package:carousel_slider/carousel_slider.dart';
 import '../../config/style.dart';
 
 class Home extends StatefulWidget {
@@ -106,7 +106,42 @@ class _HomePageState extends State<Home> {
                                   ],
 
                                 ),
-                                SizedBox(height: 165),
+                                SizedBox(height: 35),
+                                CarouselSlider(
+                                  options: CarouselOptions(height: 150.0),
+                                  items: [1, 2, 3, 4, 5].map((i) {
+                                    return Builder(
+                                      builder: (BuildContext context) {
+                                        return Container(
+                                          width: MediaQuery.of(context).size.width,
+                                          margin: EdgeInsets.symmetric(horizontal: 5.0),
+                                          decoration: BoxDecoration(
+                                              borderRadius: BorderRadius.circular(25.0),
+                                              boxShadow: [
+                                                BoxShadow(
+                                                  color: const Color(0x29000000),
+                                                  offset: Offset(0, 3),
+                                                  blurRadius: 6,
+                                                ),
+                                              ],
+                                              color: appStyle['primaryWhiteColor'] as Color
+
+                                          ),
+                                          child:Image(
+                                            image: AssetImage(
+                                                i == 1? UIImageData.duty: i==2 ?UIImageData.permission: i==2?UIImageData.sickLeave:
+                                            i==3?UIImageData.casualLeave:i==4? UIImageData.earnedLeave:UIImageData.maternity),
+                                            width: 28.0,
+                                            height: 28.0,
+                                          ),
+
+
+                                        );
+                                      },
+                                    );
+                                  }).toList(),
+                                ),
+                                SizedBox(height: 25),
                                 cardWidgetlogin(
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
