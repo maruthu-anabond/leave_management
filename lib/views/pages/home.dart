@@ -118,7 +118,7 @@ class _HomePageState extends State<Home> {
                                   },
                                 child:CarouselSlider(
                                   options: CarouselOptions(height: 170.0),
-                                  items: [1, 2, 3, 4, 5].map((i) {
+                                  items: [1, 2, 3, 4, 5, 6].map((i) {
                                     return Builder(
                                       builder: (BuildContext context) {
                                         return Container(
@@ -142,8 +142,8 @@ class _HomePageState extends State<Home> {
                                               margin: EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 5.0),
                                               child:Image(
                                               image: AssetImage(
-                                                  i == 1? UIImageData.duty: i==2 ?UIImageData.permission: i==2?UIImageData.sickLeave:
-                                              i==3?UIImageData.casualLeave:i==4? UIImageData.earnedLeave:UIImageData.maternity),
+                                                  i == 1? UIImageData.duty: i==2 ?UIImageData.permission: i==3?UIImageData.sickLeave:
+                                              i==4?UIImageData.casualLeave:i==5? UIImageData.earnedLeave:UIImageData.maternity),
                                               width: 105.0,
                                               height:85.0,
                                             ),
@@ -161,8 +161,8 @@ class _HomePageState extends State<Home> {
                                             ),
                                               SizedBox(height: 10),
                                             Text(
-                                              i == 1? "Days taken 03": i==2 ?"Available - 01hr": i==2?"Available - 14 days":
-                                              i==3?"Available - 14 days":i==4? "Available - 14 days":"Available - 182 days",
+                                              i == 1? "Days taken 03": i==2 ?"Available - 01hr": i==3?"Available - 14 days":
+                                              i==4?"Available - 14 days":i==5? "Available - 14 days":"Available - 182 days",
                                               style: TextStyle(
                                                 color: appStyle['mattGreen'] as Color,
                                                 fontStyle: FontStyle.italic,
