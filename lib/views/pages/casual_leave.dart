@@ -18,11 +18,12 @@ class casualleave extends StatefulWidget {
   _CasualPageState createState() => _CasualPageState();
 
 }
-enum colors { fn, an }
+enum colors { fn, an, efn, ean }
 class _CasualPageState extends State<casualleave> {
   late TextEditingController textController;
   String? gender;
   colors _color = colors.fn;
+  colors _colors = colors.efn;
   @override
   void initState() {
     super.initState();
@@ -269,12 +270,12 @@ class _CasualPageState extends State<casualleave> {
                                         // tileColor: Colors.pink[100],
                                         horizontalTitleGap: 0,
                                         leading: Radio<colors>(
-                                          value: colors.fn,
-                                          groupValue: _color,
+                                          value: colors.efn,
+                                          groupValue: _colors,
                                           activeColor: appStyle['mattGreen'] as Color,
                                           onChanged: (colors? value){
                                             setState(() {
-                                              _color = value??_color;
+                                              _colors = value??_colors;
                                             });
                                           },
                                         ),
@@ -288,12 +289,12 @@ class _CasualPageState extends State<casualleave> {
                                         // tileColor: Colors.pink[100],
                                         horizontalTitleGap: 0,
                                         leading: Radio<colors>(
-                                          value: colors.an,
-                                          groupValue: _color,
+                                          value: colors.ean,
+                                          groupValue: _colors,
                                           activeColor: appStyle['mattGreen'] as Color,
                                           onChanged: (colors? value){
                                             setState(() {
-                                              _color = value??_color;
+                                              _colors = value??_colors;
                                             });
                                           },
                                         ),
