@@ -150,6 +150,8 @@ class _CasualPageState extends State<casualleave> {
                                 children: [
                                   Flexible(
                                     child: ListTile(
+                                      dense:true,
+                                      contentPadding: EdgeInsets.only(left: 15.0, right: 0.0),
                                       title: const Text("FN"),
                                       // tileColor: Colors.pink[100],
                                       horizontalTitleGap: 0,
@@ -167,6 +169,8 @@ class _CasualPageState extends State<casualleave> {
                                   ),
                                   Flexible(
                                     child: ListTile(
+                                      dense:true,
+                                      contentPadding: EdgeInsets.only(left: 10.0, right: 0.0),
                                       title: const Text("AN",
                                         textAlign: TextAlign.center,
                                       ),
@@ -266,6 +270,8 @@ class _CasualPageState extends State<casualleave> {
                                   children: [
                                     Flexible(
                                       child: ListTile(
+                                        dense:true,
+                                        contentPadding: EdgeInsets.only(left: 15.0, right: 0.0),
                                         title: const Text("FN"),
                                         // tileColor: Colors.pink[100],
                                         horizontalTitleGap: 0,
@@ -283,6 +289,8 @@ class _CasualPageState extends State<casualleave> {
                                     ),
                                     Flexible(
                                       child: ListTile(
+                                        dense:true,
+                                        contentPadding: EdgeInsets.only(left: 10.0, right: 0.0),
                                         title: const Text("AN",
                                           textAlign: TextAlign.center,
                                         ),
