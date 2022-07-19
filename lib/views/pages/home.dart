@@ -30,14 +30,15 @@ class _HomePageState extends State<Home> {
   Widget build(BuildContext context) {
     return AppBackground(
       child: Container(
-        child: Stack(
+        child: ListView(
+          physics: NeverScrollableScrollPhysics(),
           children: <Widget>[
             Container(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   SizedBox(
-                    height: 80.0,
+                    height: 5.0,
                   ),
                   Container(
                     child: headerBar(
