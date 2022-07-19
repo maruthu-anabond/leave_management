@@ -41,6 +41,7 @@ const appStyle = {
   'borderColor': Color(0xffe2e2e2),
   'mattGreen': Color(0xff288b77),
   'mattBlack': Color(0xff3a3a3a),
+  'red': Color(0xFFFF0000),
 };
 
 // ThemeData appThemeData = ThemeData(
@@ -106,6 +107,12 @@ var loginButton = TextStyle(
   // fontFamily: 'Roboto',
   fontSize: 15.0,
   color: const Color(0xff288b77),
+  fontWeight: FontWeight.w700,
+);
+var applyButton = TextStyle(
+  // fontFamily: 'Roboto',
+  fontSize: 15.0,
+  color: const Color(0xffffffff),
   fontWeight: FontWeight.w700,
 );
 String ucwords(String input) {

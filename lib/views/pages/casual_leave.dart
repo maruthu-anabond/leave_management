@@ -80,12 +80,12 @@ class _CasualPageState extends State<casualleave> {
                             text: TextSpan(
                                 text: "Start date",
                                 style: TextStyle(
-                                    color: Colors.black, fontWeight: FontWeight.w400, fontSize: 20),
+                                    color: appStyle['mattBlack'] as Color, fontWeight: FontWeight.w400, fontSize: 20),
                                 children: [
                                   TextSpan(
                                       text: ' *',
                                       style: TextStyle(
-                                          color: Colors.red,
+                                          color: appStyle['red'] as Color,
                                           fontWeight: FontWeight.w300,
                                           fontSize: 25))
                                 ]),
@@ -109,14 +109,14 @@ class _CasualPageState extends State<casualleave> {
                                       // hintStyle: FlutterFlowTheme.of(context).bodyText2,
                                       enabledBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
-                                          color: Color(0xff288b77),
+                                          color: appStyle['mattGreen'] as Color,
                                           width: 1,
                                         ),
                                         borderRadius: BorderRadius.circular(20.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
-                                          color: Color(0xff288b77),
+                                          color: appStyle['mattGreen'] as Color,
                                           width: 1,
                                         ),
                                         borderRadius: BorderRadius.circular(20.0),
@@ -127,7 +127,7 @@ class _CasualPageState extends State<casualleave> {
                                     ),
                                     textAlign: TextAlign.justify,
                                     keyboardType: TextInputType.datetime,
-                                    cursorColor: const Color(0xff288b77),
+                                    cursorColor: appStyle['mattGreen'] as Color,
                                   ),
                                 ),
                               ),
@@ -196,12 +196,12 @@ class _CasualPageState extends State<casualleave> {
                             text: TextSpan(
                                 text: "End date",
                                 style: TextStyle(
-                                    color: Colors.black, fontWeight: FontWeight.w400, fontSize: 20),
+                                    color: appStyle['mattBlack'] as Color, fontWeight: FontWeight.w400, fontSize: 20),
                                 children: [
                                   TextSpan(
                                       text: ' *',
                                       style: TextStyle(
-                                          color: Colors.red,
+                                          color: appStyle['red'] as Color,
                                           fontWeight: FontWeight.w300,
                                           fontSize: 25))
                                 ]),
@@ -225,14 +225,14 @@ class _CasualPageState extends State<casualleave> {
                                         // hintStyle: FlutterFlowTheme.of(context).bodyText2,
                                         enabledBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: Color(0xff288b77),
+                                            color: appStyle['mattGreen'] as Color,
                                             width: 1,
                                           ),
                                           borderRadius: BorderRadius.circular(20.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: Color(0xff288b77),
+                                            color: appStyle['mattGreen'] as Color,
                                             width: 1,
                                           ),
                                           borderRadius: BorderRadius.circular(20.0),
@@ -243,7 +243,7 @@ class _CasualPageState extends State<casualleave> {
                                       ),
                                       textAlign: TextAlign.justify,
                                       keyboardType: TextInputType.datetime,
-                                      cursorColor: const Color(0xff288b77),
+                                      cursorColor: appStyle['mattGreen'] as Color,
                                     ),
                                   ),
                                 ),
@@ -314,7 +314,7 @@ class _CasualPageState extends State<casualleave> {
                             text: TextSpan(
                                 text: "No of days",
                                 style: TextStyle(
-                                    color: Colors.black, fontWeight: FontWeight.w400, fontSize: 20),
+                                    color: appStyle['mattBlack'] as Color, fontWeight: FontWeight.w400, fontSize: 20),
                                 ),
                             ),
                             SizedBox(
@@ -324,12 +324,12 @@ class _CasualPageState extends State<casualleave> {
                               text: TextSpan(
                                 text: "Emergency contact",
                                 style: TextStyle(
-                                    color: Colors.black, fontWeight: FontWeight.w400, fontSize: 20),
+                                    color: appStyle['mattBlack'] as Color, fontWeight: FontWeight.w400, fontSize: 20),
                                   children: [
                                     TextSpan(
                                         text: ' *',
                                         style: TextStyle(
-                                            color: Colors.red,
+                                            color: appStyle['red'] as Color,
                                             fontWeight: FontWeight.w300,
                                             fontSize: 25))
                                   ]),
@@ -355,14 +355,14 @@ class _CasualPageState extends State<casualleave> {
                                         // hintStyle: FlutterFlowTheme.of(context).bodyText2,
                                         enabledBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: Color(0xff288b77),
+                                            color: appStyle['mattGreen'] as Color,
                                             width: 1,
                                           ),
                                           borderRadius: BorderRadius.circular(20.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: Color(0xff288b77),
+                                            color: appStyle['mattGreen'] as Color,
                                             width: 1,
                                           ),
                                           borderRadius: BorderRadius.circular(20.0),
@@ -373,7 +373,7 @@ class _CasualPageState extends State<casualleave> {
                                       ),
                                       textAlign: TextAlign.justify,
                                       keyboardType: TextInputType.number,
-                                      cursorColor: const Color(0xff288b77),
+                                      cursorColor: appStyle['mattGreen'] as Color,
                                     ),
                                   ),
                                 ),
@@ -395,14 +395,14 @@ class _CasualPageState extends State<casualleave> {
                                         // hintStyle: FlutterFlowTheme.of(context).bodyText2,
                                         enabledBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: Color(0xff288b77),
+                                            color: appStyle['mattGreen'] as Color,
                                             width: 1,
                                           ),
                                           borderRadius: BorderRadius.circular(20.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: Color(0xff288b77),
+                                            color: appStyle['mattGreen'] as Color,
                                             width: 1,
                                           ),
                                           borderRadius: BorderRadius.circular(20.0),
@@ -413,7 +413,7 @@ class _CasualPageState extends State<casualleave> {
                                       ),
                                       textAlign: TextAlign.justify,
                                       keyboardType: TextInputType.number,
-                                      cursorColor: const Color(0xff288b77),
+                                      cursorColor: appStyle['mattGreen'] as Color,
                                     ),
                                   ),
                                 ),
@@ -428,12 +428,12 @@ class _CasualPageState extends State<casualleave> {
                             text: TextSpan(
                                 text: "Reason",
                                 style: TextStyle(
-                                    color: Colors.black, fontWeight: FontWeight.w400, fontSize: 20),
+                                    color: appStyle['mattBlack'] as Color, fontWeight: FontWeight.w400, fontSize: 20),
                                 children: [
                                   TextSpan(
                                       text: ' *',
                                       style: TextStyle(
-                                          color: Colors.red,
+                                          color: appStyle['red'] as Color,
                                           fontWeight: FontWeight.w300,
                                           fontSize: 25))
                                 ]),
@@ -457,14 +457,14 @@ class _CasualPageState extends State<casualleave> {
                                         // hintStyle: FlutterFlowTheme.of(context).bodyText2,
                                         enabledBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: Color(0xff288b77),
+                                            color: appStyle['mattGreen'] as Color,
                                             width: 1,
                                           ),
                                           borderRadius: BorderRadius.circular(20.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: Color(0xff288b77),
+                                            color: appStyle['mattGreen'] as Color,
                                             width: 1,
                                           ),
                                           borderRadius: BorderRadius.circular(20.0),
@@ -473,13 +473,47 @@ class _CasualPageState extends State<casualleave> {
                                       style: TextStyle(
                                         fontFamily: 'Roboto',
                                       ),
+                                      minLines: 6,
+                                      maxLines: null,
                                       textAlign: TextAlign.justify,
-                                      keyboardType: TextInputType.text,
-                                      cursorColor: const Color(0xff288b77),
+                                      keyboardType: TextInputType.multiline,
+                                      cursorColor: appStyle['mattGreen'] as Color,
                                     ),
                                   ),
                                 ),
                               ),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 20.0,
+                          ),
+                          Row(
+                            children: [
+                              Expanded(
+                                child: Align(
+                                  // alignment: AlignmentDirectional(-0.98, -0.45),
+                                  child:
+                                    InkWell(
+                                      // onTap: () async {
+                                      //   if (_formKey.currentState.validate()) {
+                                      //     Navigator.push(
+                                      //       context,
+                                      //       MaterialPageRoute(
+                                      //           builder: (context) => ChooseOrganization()),
+                                      //     );
+                                      //
+                                      //   }
+                                      // },
+                                      onTap: () async {
+                                        //   // Navigator.push(
+                                        //   //   context,
+                                        //   //   MaterialPageRoute(builder: (context) => OverView()),
+                                        //   // );
+                                      },
+                                      child: applybutton(),
+                                    ),
+                                  ),
+                                ),
                             ],
                           ),
                         ],
