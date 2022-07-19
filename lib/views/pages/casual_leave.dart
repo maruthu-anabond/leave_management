@@ -132,10 +132,10 @@ class _CasualPageState extends State<casualleave> {
                             ),
                             Expanded(
                               child: Align(
-                                alignment: Alignment(20.00, -0.78),
+                                alignment: Alignment(2.00, -0.78),
                                 child: Image.asset(UIImageData.leave_calendar,
-                                  width: MediaQuery.of(context).size.width * 0.1,
-                                  height: MediaQuery.of(context).size.height * 0.05,
+                                  width: 30,
+                                  height: 30,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -152,6 +152,7 @@ class _CasualPageState extends State<casualleave> {
                                       leading: Radio<colors>(
                                         value: colors.fn,
                                         groupValue: _color,
+                                        activeColor: appStyle['mattGreen'] as Color,
                                         onChanged: (colors? value){
                                           setState(() {
                                             _color = value??_color;
@@ -162,12 +163,15 @@ class _CasualPageState extends State<casualleave> {
                                   ),
                                   Flexible(
                                     child: ListTile(
-                                      title: const Text("AN"),
+                                      title: const Text("AN",
+                                        textAlign: TextAlign.center,
+                                      ),
                                       // tileColor: Colors.pink[100],
                                       horizontalTitleGap: 0,
                                       leading: Radio<colors>(
                                         value: colors.an,
                                         groupValue: _color,
+                                        activeColor: appStyle['mattGreen'] as Color,
                                         onChanged: (colors? value){
                                           setState(() {
                                             _color = value??_color;
