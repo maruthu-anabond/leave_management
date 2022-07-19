@@ -41,7 +41,7 @@ class _CasualPageState extends State<casualleave> {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   SizedBox(
-                    height: 40.0,
+                    height: 35.0,
                   ),
                   Container(
                     child: headerBar(
