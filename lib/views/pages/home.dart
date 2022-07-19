@@ -151,8 +151,8 @@ class _HomePageState extends State<Home> {
                                             ),
 
                                             Text(
-                                          i == 1? "On Duty": i==2 ?"Permission": i==2?"Sick Leave":
-                                        i==3?"Casual Leave":i==4? "Earned Leave":"Maternity Leave",
+                                          i == 1? "On Duty": i==2 ?"Permission": i==3?"Sick Leave":
+                                        i==4?"Casual Leave":i==5? "Earned Leave":"Maternity Leave",
                                             style: TextStyle(
                                             fontFamily: 'Roboto',
                                             fontWeight: FontWeight.w400,
