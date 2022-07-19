@@ -31,7 +31,8 @@ class _HomePageState extends State<Home> {
     return AppBackground(
       child: Container(
         child: ListView(
-          physics: NeverScrollableScrollPhysics(),
+          physics: ClampingScrollPhysics(),
+          shrinkWrap: true,
           children: <Widget>[
             Container(
               child: Column(
