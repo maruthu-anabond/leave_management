@@ -11,6 +11,7 @@ import 'package:leave_management/views/pages/login.dart';
 import 'package:leave_management/views/templates/headernav.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import '../../config/style.dart';
+import 'package:leave_management/views/pages/casual_leave.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -107,7 +108,14 @@ class _HomePageState extends State<Home> {
 
                                 ),
                                 SizedBox(height: 15),
-                                CarouselSlider(
+                                InkWell(
+                                  onTap: () async {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(builder: (context) => casualleave()),
+                                      );
+                                  },
+                                child:CarouselSlider(
                                   options: CarouselOptions(height: 170.0),
                                   items: [1, 2, 3, 4, 5].map((i) {
                                     return Builder(
@@ -171,6 +179,7 @@ class _HomePageState extends State<Home> {
                                       },
                                     );
                                   }).toList(),
+                                ),
                                 ),
                                 SizedBox(height: 25),
                                 cardWidgetlogin(
