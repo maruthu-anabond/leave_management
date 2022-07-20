@@ -55,7 +55,7 @@ class _CasualPageState extends State<casualleave> {
                     ),
                   ),
                   SizedBox(
-                    height: 5.0,
+                    height: 20.0,
                   ),
                   Container(
                     child: headerStyleLeave(
@@ -64,9 +64,9 @@ class _CasualPageState extends State<casualleave> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(horizontal: 15.0, vertical: 0.0),
+                    margin: EdgeInsets.symmetric(horizontal: 15.0, vertical: 5.0),
                     width: MediaQuery.of(context).size.width * 1.5,
-                    height: MediaQuery.of(context).size.height * 0.75,
+                    height: MediaQuery.of(context).size.height * 0.80,
                     child: Container(
                       color: Color(0xffffff),
                       child: ListView(
@@ -103,7 +103,7 @@ class _CasualPageState extends State<casualleave> {
                                   width: MediaQuery.of(context).size.width * 0.45,
                                   height: MediaQuery.of(context).size.height * 0.07,
                                   child: TextFormField(
-                                    controller: textController,
+                                    // controller: textController,
                                     autofocus: true,
                                     obscureText: false,
                                     decoration: InputDecoration(
@@ -151,7 +151,7 @@ class _CasualPageState extends State<casualleave> {
                                   Flexible(
                                     child: ListTile(
                                       dense:true,
-                                      contentPadding: EdgeInsets.only(left: 15.0, right: 0.0),
+                                      contentPadding: EdgeInsets.only(left: 5.0, right: 0.0),
                                       title: const Text("FN"),
                                       // tileColor: Colors.pink[100],
                                       horizontalTitleGap: 0,
@@ -170,7 +170,7 @@ class _CasualPageState extends State<casualleave> {
                                   Flexible(
                                     child: ListTile(
                                       dense:true,
-                                      contentPadding: EdgeInsets.only(left: 10.0, right: 0.0),
+                                      contentPadding: EdgeInsets.only(left: 5.0, right: 5.0),
                                       title: const Text("AN",
                                         textAlign: TextAlign.center,
                                       ),
@@ -223,7 +223,7 @@ class _CasualPageState extends State<casualleave> {
                                     width: MediaQuery.of(context).size.width * 0.45,
                                     height: MediaQuery.of(context).size.height * 0.07,
                                     child: TextFormField(
-                                      controller: textController,
+                                      // controller: textController,
                                       autofocus: true,
                                       obscureText: false,
                                       decoration: InputDecoration(
@@ -271,7 +271,7 @@ class _CasualPageState extends State<casualleave> {
                                     Flexible(
                                       child: ListTile(
                                         dense:true,
-                                        contentPadding: EdgeInsets.only(left: 15.0, right: 0.0),
+                                        contentPadding: EdgeInsets.only(left: 5.0, right: 0.0),
                                         title: const Text("FN"),
                                         // tileColor: Colors.pink[100],
                                         horizontalTitleGap: 0,
@@ -290,7 +290,7 @@ class _CasualPageState extends State<casualleave> {
                                     Flexible(
                                       child: ListTile(
                                         dense:true,
-                                        contentPadding: EdgeInsets.only(left: 10.0, right: 0.0),
+                                        contentPadding: EdgeInsets.only(left: 5.0, right: 5.0),
                                         title: const Text("AN",
                                           textAlign: TextAlign.center,
                                         ),
@@ -357,7 +357,7 @@ class _CasualPageState extends State<casualleave> {
                                     width: MediaQuery.of(context).size.width * 0.45,
                                     height: MediaQuery.of(context).size.height * 0.07,
                                     child: TextFormField(
-                                      controller: textController,
+                                      // controller: textController,
                                       autofocus: true,
                                       obscureText: false,
                                       decoration: InputDecoration(
@@ -397,7 +397,7 @@ class _CasualPageState extends State<casualleave> {
                                     width: MediaQuery.of(context).size.width * 0.50,
                                     height: MediaQuery.of(context).size.height * 0.07,
                                     child: TextFormField(
-                                      controller: textController,
+                                      // controller: textController,
                                       autofocus: true,
                                       obscureText: false,
                                       decoration: InputDecoration(
@@ -459,7 +459,7 @@ class _CasualPageState extends State<casualleave> {
                                     // width: MediaQuery.of(context).size.width * 2.0,
                                     // height: MediaQuery.of(context).size.height * 1.07,
                                     child: TextFormField(
-                                      controller: textController,
+                                      // controller: textController,
                                       autofocus: true,
                                       obscureText: false,
                                       decoration: InputDecoration(
